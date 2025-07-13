@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rookie Cloud Hosting - Tailwind</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+</head>
+
+<body class="font-sans text-gray-800">
+  <!-- Navbar -->
+  <header class="bg-blue-600 text-white">
+    <div class="max-w-6xl mx-auto md:flex items-center justify-between p-4">
+    <h1 class="text-6xl font-bold">Rookie</h1>
+    <nav>
+      <ul class="flex space-x-6 text-3xl">
+      <li><a href="index.html" class="hover:underline">Home</a></li>
+      <li><a href="features.html" class="hover:underline">Features</a></li>
+      <li><a href="docs.html" class="hover:underline">Docs</a></li>
+      </ul>
+    </nav>
+    </div>
+  </header>
+
+  <!-- Showcase -->
+  <section class="bg-blue-600 text-white py-16 ">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 grid-cols-1 gap-8 items-center px-4">
+    <div>
+      <h1 class="text-8xl mb-4">Docs</h1>
+      <p class="mb-6 text-2xl">Learn how to work with the Rookie platform</p>
+    </div>
+    <div class="">
+      <img class="w-1/2 h-full items-end" id="right" src="images/docs.png" alt="server">
+    </div>
+    </div>
+  </section>
+
+  <!-- Section -->
+  <section class="py-16">
+    <div class="grid md:grid-cols-3 gap-10 items-start justify-center px-20">
+      <div class="rounded-xl bg-gray-200 shadow-xl">
+        <div class="mx-auto px-5 py-6 hidden lg:block">
+          <h2 class="text-3xl my-6">Essentials</h2>
+          <ul class="text-gray-600">
+          <li class="hover:font-bold focus:text-blue-500 border-b-2 border-b-gray-400 pb-3 text-xl mt-3">Introduction</li>
+          <li class="hover:font-bold focus:text-blue-500 border-b-2 border-b-gray-400 pb-3 text-xl mt-3">About Rookie</li>
+          <li class="hover:font-bold focus:text-blue-500 border-b-2 border-b-gray-400 pb-3 text-xl mt-3">Installation</li>
+          </ul>
+          <h2 class="text-3xl my-6">Essentials</h2>
+          <ul class="text-gray-600">
+          <li class="hover:font-bold focus:text-blue-500 border-b-2 border-b-gray-400 pb-3 text-xl mt-3">Setting up a container </li>
+          <li class="hover:font-bold focus:text-blue-500 border-b-2 border-b-gray-400 pb-3 text-xl mt-3">Using the cli</li>
+          <li class="hover:font-bold focus:text-blue-500 border-b-2 border-b-gray-400 pb-3 text-xl mt-3">Managing resources</li>
+          <li class="hover:font-bold focus:text-blue-500 border-b-2 border-b-gray-400 pb-3 text-xl mt-3">Upgrade & downgrade</li>
+          </ul>
+        </div>
+      </div>
+      <div class="rounded-xl border-white shadow-xl p-5 col-span-2">
+        <h1 class="text-3xl my-3">Introduction</h1>
+        <p class="text-xl my-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est soluta nobis vero veritatis sequi numquam inventore voluptates veniam asperiores ea.</p>
+        <p class="bg-green-500 p-3 text-xl text-white"> <span class="text-3xl font-light">i</span>  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, quaerat.</p>
+        <h1 class="text-3xl my-3">How To Install</h1>
+        <p class="text-xl mt-5 mb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, cum possimus aliquid iste pariatur magnam.</p>
+        <a class="bg-blue-600 rounded-[10px] px-5 py-3 text-white mt-5 mb-9" href="#">Install cli</a>
+        <h1 class="text-3xl my-3">Requirement</h1>
+        <p class="text-xl mt-3">Windows,Mac OSX, Linux</p>
+        <p class="text-xl mb-3">Node.js v12 or higher</p>
+        <h1 class="text-3xl my-3">Install</h1>
+        <p class="text-xl mt-3">Mac(Homebrew)</p>
+        <p class="bg-gray-700 text-white  text-xl my-3 p-3">$ brew install Rookie-cli</p>
+        <p class="text-xl mt-3">NPM</p>
+        <p class="bg-gray-700 text-white  text-xl my-3 p-3">$ npm install Rookie-cli</p>
+        <p class="text-xl mt-3">Yarn</p>
+        <p class="bg-gray-700 text-white  text-xl my-3 p-3">$ yarn install Rookie-cli</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-8">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 px-4">
+      <div>
+        <h1 class="text-2xl font-bold">Rookie</h1>
+        <p>&copy; 2020</p>
+      </div>
+      <nav>
+      <ul class="space-y-2">
+        <li><a href="index.html" class="hover:underline">Home</a></li>
+        <li><a href="features.html" class="hover:underline">Features</a></li>
+        <li><a href="docs.html" class="hover:underline">Docs</a></li>
+      </ul>
+      </nav>
+      <div class="flex space-x-4 items-center">
+        <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+        <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+        <a href="#"><i class="fab fa-github fa-2x"></i></a>
+        <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

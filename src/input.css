@@ -1,0 +1,39 @@
+@import "tailwindcss";
+@theme {
+  --animate-slideinfromleft: slideinfromleft 1s ease-in-out;
+  @keyframes slideinfromleft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  --animate-slideinfromright: slideinfromright 1s ease-in-out;
+  @keyframes slideinfromright {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  --animate-slideinfromtop: slideinfromtop 1s ease-in-out;
+  @keyframes slideinfromtop {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  --animate-slideinfrombottom: slideinfrombottom 1s ease-in-out;
+  @keyframes slideinfrombottom {
+    0% {
+      transform: translateY(100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+}

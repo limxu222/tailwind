@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rookie Cloud Hosting - Tailwind</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+  <link rel="stylesheet" href="output.css">
+  <link rel="stylesheet" href="input.css">
+</head>
+
+<body class="font-sans text-gray-800">
+  <!-- Navbar -->
+  <header class="bg-blue-600 text-white">
+    <div class="max-w-6xl mx-auto flex items-center justify-between p-4">
+      <h1 class="text-2xl font-bold">Rookie</h1>
+      <nav>
+        <ul class="flex space-x-6">
+        <li><a href="index.html" class="hover:underline">Home</a></li>
+        <li><a href="features.html" class="hover:underline">Features</a></li>
+        <li><a href="docs.html" class="hover:underline">Docs</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Showcase -->
+  <section class="bg-blue-600 text-white py-16">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 justify-center px-4">
+    <div class="animate-slideinfromleft">
+      <h1 class="text-4xl font-bold mb-4">Easier Deployment</h1>
+      <p class="mb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+      <a href="features.html"
+      class="inline-block border border-white px-6 py-2 rounded hover:bg-white hover:text-blue-600 transition">Read
+      More</a>
+    </div>
+    <div class="bg-white text-gray-900 p-8 rounded-lg shadow-lg md:animate-slideinfromright">
+      <h2 class="text-2xl font-semibold mb-6">Request a Demo</h2>
+      <form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true" class="space-y-4">
+      <input type="hidden" name="form-name" value="contact" />
+      <div class="hidden">
+        <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+      </div>
+      <input type="text" name="name" placeholder="Name" required class="w-full border-b p-2 focus:outline-none" />
+      <input type="text" name="company" placeholder="Company Name" required
+        class="w-full border-b p-2 focus:outline-none" />
+      <input type="email" name="email" placeholder="Email" required class="w-full border-b p-2 focus:outline-none" />
+      <input type="submit" value="Send" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700" />
+      </form>
+    </div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="py-16 md:animate-slideinfrombottom">
+    <div class="max-w-4xl mx-auto text-center px-4">
+    <h3 class="text-xl mb-8">Lorem ipsum dolor sit amet consectetur adipisicing elit...</h3>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div>
+      <i class="fas fa-server fa-3x mb-2"></i>
+      <h3 class="text-2xl font-bold">10,349,405</h3>
+      <p class="text-gray-500">Deployment</p>
+      </div>
+      <div>
+      <i class="fas fa-upload fa-3x mb-2"></i>
+      <h3 class="text-2xl font-bold">987 TB</h3>
+      <p class="text-gray-500">Published</p>
+      </div>
+      <div>
+      <i class="fas fa-project-diagram fa-3x mb-2"></i>
+      <h3 class="text-2xl font-bold">2,343,556</h3>
+      <p class="text-gray-500">Projects</p>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- CLI Section -->
+  <section class="py-16 bg-gray-100">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 px-4 items-center">
+    <img src="images/cli.png" alt="CLI" class="col-span-2 row-span-2" />
+    <div class="bg-white p-6 rounded shadow text-center">
+      <h3>Easy to use, cross platform CLI</h3>
+    </div>
+    <div class="bg-white p-6 rounded shadow text-center">
+      <h3>Deploy in seconds</h3>
+    </div>
+    </div>
+  </section>
+
+  <!-- Cloud -->
+  <section class="bg-blue-600 text-white py-16">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 px-4 items-center">
+    <div class="text-center">
+      <h2 class="text-3xl font-bold mb-2">Extreme Cloud Hosting</h2>
+      <p class="mb-4">Cloud hosting like you've never seen. Fast, efficient, and scalable.</p>
+      <a href="features.html"
+      class="inline-block bg-white text-blue-600 px-6 py-2 rounded hover:bg-gray-200 transition">Read More</a>
+    </div>
+    <img src="images/cloud.png" alt="Cloud Image" />
+    </div>
+  </section>
+
+  <!-- Languages -->
+  <section class="py-16">
+    <h2 class="text-center text-2xl font-semibold mb-10">Supported Languages</h2>
+    <div class="max-w-6xl mx-auto flex flex-wrap justify-center gap-6">
+    <div class="text-center border p-6 rounded-xl ease-in-out md:transition-transform md:hover:-translate-y-5 duration-[1s]">
+      <h4>Node.js</h4>
+      <img src="images/logos/node.png" alt="Node.js" class="w-20 mx-auto" />
+    </div>
+    <div class="text-center border p-6 rounded-xl ease-in-out md:transition-transform md:hover:-translate-y-5">
+      <h4>C#</h4>
+      <img src="images/logos/csharp.png" alt="C#" class="w-20 mx-auto" />
+    </div>
+    <div class="text-center border p-6 rounded-xl ease-in-out md:transition-transform md:hover:-translate-y-5">
+      <h4>Ruby</h4>
+      <img src="images/logos/ruby.png" alt="Ruby" class="w-20 mx-auto" />
+    </div>
+    <div class="text-center border p-6 rounded-xl ease-in-out md:transition-transform md:hover:-translate-y-5">
+      <h4>PHP</h4>
+      <img src="images/logos/php.png" alt="PHP" class="w-20 mx-auto" />
+    </div>
+    <div class="text-center border p-6 rounded-xl ease-in-out md:transition-transform md:hover:-translate-y-5">
+      <h4>Scala</h4>
+      <img src="images/logos/scala.png" alt="Scala" class="w-20 mx-auto" />
+    </div>
+    <div class="text-center border p-6 rounded-xl ease-in-out md:transition-transform md:hover:-translate-y-5">
+      <h4>Clojure</h4>
+      <img src="images/logos/clojure.png" alt="Clojure" class="w-20 mx-auto" />
+    </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-8">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 px-4">
+    <div>
+      <h1 class="text-2xl font-bold">Rookie</h1>
+      <p>&copy; 2020</p>
+    </div>
+    <nav>
+      <ul class="space-y-2">
+      <li><a href="index.html" class="hover:underline">Home</a></li>
+      <li><a href="features.html" class="hover:underline">Features</a></li>
+      <li><a href="docs.html" class="hover:underline">Docs</a></li>
+      </ul>
+    </nav>
+    <div class="flex space-x-4 items-center">
+      <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+      <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+      <a href="#"><i class="fab fa-github fa-2x"></i></a>
+      <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+    </div>
+    </div>
+  </footer>
+</body>
+
+</html>
